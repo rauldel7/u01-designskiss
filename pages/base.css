@@ -34,7 +34,7 @@ body {
 }
 
 .logo-number {
-    font-size: 32px;
+    font-size: 20px;
     font-weight:bold;
     background: linear-gradient(
     90deg,
@@ -48,7 +48,7 @@ body {
 
 .logo-text {
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     background: linear-gradient(
     90deg,
@@ -68,9 +68,11 @@ body {
 }
 
 .menu-button {
-    font-size:40px;
+    font-size: 20px;
+    font-weight: bold;
     cursor: pointer;
     line-height: 1;
+
 }
 
 /* Navigation */
@@ -92,7 +94,7 @@ body {
     margin: 10px 0;
     color:black;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -116,9 +118,9 @@ body {
 }
 
 .socials img {
-    width: 50px;
-    height: 50px;
-    object-fit:contain;
+    width: 40px;
+    height: auto;
+    object-fit: contain;
 }
 
 /* Introduction */
@@ -128,12 +130,12 @@ body {
 }
 
 .intro-text h1, .intro-text h2 {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 1.2;
 }
 
 .intro-text .name {
-    font-size: 46px;
+    font-size: 35px;
     font-weight: bold;
     background: linear-gradient(
     90deg,
@@ -146,7 +148,7 @@ body {
 }
 
 .intro-text p {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 1.2;
     font-weight: bold;
 }
@@ -155,10 +157,10 @@ body {
 
 .intro-image {
     width: 100%;
-    max-width: 460px;
+    max-width: 40%;
     aspect-ratio: 1;
     margin: 40px 10px 0 0;
-    padding: 10px;
+    padding: 5px;
     border-radius: 50%;
     background: linear-gradient(
     135deg,
