@@ -21,7 +21,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px 38px;
+    padding: 24px 46px;
 }
 
 /* Logo */
@@ -126,7 +126,7 @@ body {
 /* Introduction */
 
 .intro {
-    padding: 20px 38px;
+    padding: 24px 46px;
 }
 
 .intro-text h1, .intro-text h2 {

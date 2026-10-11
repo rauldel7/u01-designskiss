@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #ffffff;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px 46px;
+}
+
+/* Logo */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.logo-number {
+    font-size: 20px;
+    font-weight:bold;
+    background: linear-gradient(
+    90deg,
+    #299de6,
+    #d600a4
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.logo-text {
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient(
+    90deg,
+    #299de6,
+    #d600a4
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+/* ☰ button */
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+
+}
+
+/* Navigation */
+
+.nav {
+    display: none;
+    width: 100%;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.nav a {
+    display: block;
+    margin: 10px 0;
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#menu-toggle:checked ~ .nav {
+    display: block;
+}
+
+/* Socials in Navigation */
+
+.socials {
+    display: block;
+    width: 100%;
+}
+
+.socials ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25%;
+    list-style: none;
+}
+
+.socials img {
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+}
+
+/*About me, Experince and Education*/ 
+
+.about {
+    padding: 24px 46px;
+}
+
+.about h1,
+.work-experience h1,
+.education h1 {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 28px auto;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+    color: gray;
+}
+
+/*Work Experience*/
+
+.work-experience {
+    padding: 24px 46px;
+}
+
+
+.job {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.job h2 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: gray;
+    margin-bottom: 4px;
+}
+
+.company,
+.location {
+    left: 0;
+    font-size: 10px;
+    color: gray;
+}
+
+.job .status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background-color: rgb(176, 245, 176);
+    color: green;
+    font-size: 10px;
+}
+
+.job .dates {
+    position: absolute;
+    top: 28px;
+    right: 0;
+    font-size: 10px;
+    color: gray;
+
+}
+
+/*Education*/
+
+.education {
+    padding: 24px 46px;
+}
+
+.program {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.program h2 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: gray;
+    margin-bottom: 4px;
+}
+
+.school {
+    left: 0;
+    font-size: 10px;
+    color: gray;
+}
+
+
+.program .status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background-color: #e5f9e5;
+    color: #57964e;
+    font-size: 10px;
+}
+
+.program .dates {
+    position: absolute;
+    top: 28px;
+    right: 0;
+    font-size: 10px;
+    color: gray;
+
+}
+
+
+
+
+
+/*Footer*/
+
+footer {
+    padding: 30px 38px;
+
+    text-align: center;
+}
+.footer-text {
+    font-size: 11px;
+}
+
+.footer-text i {
+    background: linear-gradient(
+    90deg,
+    #299de6,
+    #d600a4
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@media (min-width: 600px) {
+ 
+}   
