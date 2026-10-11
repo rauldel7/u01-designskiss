@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: black;
     background-color: #ffffff;
     min-height: 100vh;
@@ -210,6 +210,54 @@ footer {
     -webkit-background-clip: text;
     color: transparent;
 }
+
+/*Media query*/
+
 @media (min-width: 600px) {
- 
+
+    /*Header Nav*/
+
+    .header {
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 60px 120px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: auto;
+    }    
+
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nav a {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        color: gray;
+    }
+
+    .socials {
+        width: auto;
+        margin-left: 40px;
+    }
+
+    .socials img {
+        filter: grayscale(100%);
+        opacity: 0.6;
+    }
+
+    /*Introduction*/
+
 }   

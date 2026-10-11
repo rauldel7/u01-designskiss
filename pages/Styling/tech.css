@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: black;
     background-color: #ffffff;
     min-height: 100vh;
@@ -205,6 +205,9 @@ footer {
     -webkit-background-clip: text;
     color: transparent;
 }
+
+/*Media query*/
+
 @media (min-width: 600px) {
  
 }   
