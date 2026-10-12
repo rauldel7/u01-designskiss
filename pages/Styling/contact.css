@@ -228,4 +228,17 @@ footer {
         filter: grayscale(100%);
         opacity: 0.6;
     }
+
+    /*Contacts*/
+
+    .contact-text h1,
+    .contact-text h2 {
+        font-size: 52px;
+    }
+
+    .contact-text p,
+    .telefon {
+        display: none;
+    }
+
 }   
