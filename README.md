@@ -32,3 +32,5 @@ Jag tycker att min lösning för knappen var bra och en riktig utmaning. ifall j
 Jag hade svårt med alla ikonerna i tech sidan när det kom till css. Jag använde flexbox i början men tyckte inte om hur det blev för att det inte blev som skissen. Den lärde mig hur grid-columns fungerade som jag sedan använde i projekt sidan också utan hjälp av AI. 
 
 Jag visste heller inte hur jag skulle färga texten med en gradient. AI hjälpte mig få fram css som jag sedan kunde använda igen i alla andra platser som behövde det.
+
+Link: https://rauldel7.github.io/u01-designskiss/ 
