@@ -197,6 +197,16 @@ body {
 
 }
 
+.location img,
+.company img,
+.school img,
+.dates img {
+        filter: grayscale(100%);
+        opacity: 0.6;
+        height: 8px;
+    }
+
+
 /*Education*/
 
 .education {
@@ -275,6 +285,64 @@ footer {
 
 /*Media query*/
 
-@media (min-width: 600px) {
- 
+@media (min-width: 996px) {
+
+    /*Header Nav*/
+
+    .header {
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 60px 120px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: auto;
+    }    
+
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nav a {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        color: gray;
+    }
+
+    .socials {
+        width: auto;
+        margin-left: 40px;
+    }
+
+    .socials img {
+        filter: grayscale(100%);
+        opacity: 0.6;
+    }
+
+    /*About Me*/
+
+    .about,
+    .work-experience,
+    .education {
+        padding-left: 120px;
+        padding-right: 45%;
+    }
+
+    .about h1,
+    .work-experience h1,
+    .education h1 {
+        font-size: 48px;
+
+}
 }   

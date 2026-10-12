@@ -213,7 +213,7 @@ footer {
 
 /*Media query*/
 
-@media (min-width: 600px) {
+@media (min-width: 996px) {
 
     /*Header Nav*/
 
@@ -277,4 +277,5 @@ footer {
     .intro-image {
         max-width: 25%;
     }
+
 }   
