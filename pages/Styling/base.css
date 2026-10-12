@@ -70,8 +70,16 @@ body {
 /* ☰ button */
 
 #menu-toggle {
-    display: none;
+    opacity: 0;
 }
+
+#menu-toggle:focus-visible + .menu-button {
+    outline: 2px solid;
+    outline-offset: 5px;
+    border-radius: 10%;
+
+}
+
 
 .menu-button {
     font-size: 25px;
@@ -80,6 +88,7 @@ body {
     line-height: 1;
 
 }
+
 
 /* Navigation */
 
@@ -136,12 +145,12 @@ body {
 }
 
 .intro-text h1, .intro-text h2 {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 1.2;
 }
 
 .intro-text .name {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     background: linear-gradient(
     90deg,
@@ -154,7 +163,7 @@ body {
 }
 
 .intro-text p {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 1.2;
     font-weight: bold;
 }
@@ -226,6 +235,10 @@ footer {
     .menu-button {
         display: none;
     }
+
+    #menu-toggle {
+        display: none;
+}
 
     .nav {
         display: flex;
