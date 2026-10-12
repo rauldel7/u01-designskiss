@@ -1,132 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    cursor: default;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-    color: black;
-    background-color: #ffffff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;    
-}
-
-/* Header */
-
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 24px 46px;
-}
-
-/* Logo */
-
-.logo {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    line-height: 1;
-}
-
-.logo-number {
-    font-size: 20px;
-    font-weight:bold;
-    background: linear-gradient(
-    90deg,
-    #299de6,
-    #d600a4
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-.logo-text {
-    margin-top: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    background: linear-gradient(
-    90deg,
-    #299de6,
-    #d600a4
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-
-}
-
-/* ☰ button */
-
-#menu-toggle {
-    display: none;
-}
-
-.menu-button {
-    font-size: 25px;
-    font-weight: bold;
-    cursor: pointer;
-    line-height: 1;
-
-}
-
-/* Navigation */
-
-.nav {
-    display: none;
-    width: 100%;
-}
-
-.nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-}
-
-.nav a {
-    display: block;
-    margin: 10px 0;
-    color:black;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-#menu-toggle:checked ~ .nav {
-    display: block;
-}
-
-/* Socials in Navigation */
-
-.socials {
-    display: block;
-    width: 100%;
-}
-
-.socials ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 25%;
-    list-style: none;
-}
-
-.socials img {
-    width: 25px;
-    height: auto;
-    object-fit: contain;
-}
-
 /*Projects*/
 
 .projects {
@@ -151,9 +22,10 @@ body {
     gap: 32px;
 }
 
-.project-box {
+.project-box-mobile,
+.project-box-desktop {
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 25px;
     background-color: #ffffff;
     box-shadow: 0 10px 20px rgba(30, 50, 80, 0.15);
 }
@@ -162,10 +34,11 @@ body {
     display: block;
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: fill;
 }
 
-.project-box h2,
+.project-box-mobile h2,
+.project-box-desktop h2,
 .project-text,
 .stack-text,
 .project-links{
@@ -173,7 +46,8 @@ body {
     margin-right: 14px;
 }
 
-.project-box h2 {
+.project-box-mobile h2,
+.project-box-desktop h2 {
     display: block;
     font-size: 18px;
     font-weight: 700;
@@ -205,79 +79,12 @@ body {
     color: black;
 }
 
-
-
-/*Footer*/
-
-footer {
-    padding: 30px 38px;
-
-    margin-top: auto;
-
-    text-align: center;
+.project-box-desktop {
+    display:none;
 }
-.footer-text {
-    font-size: 11px;
-}
-
-.footer-text i {
-    background: linear-gradient(
-    90deg,
-    #299de6,
-    #d600a4
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
 /*Media query*/
 
 @media (min-width: 996px) {
-
-    /*Header Nav*/
-
-    .header {
-        flex-wrap: nowrap;
-        align-items: center;
-        padding: 60px 120px;
-    }
-
-    .menu-button {
-        display: none;
-    }
-
-    .nav {
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        width: auto;
-    }    
-
-    .nav ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .nav a {
-        font-size: 18px;
-        font-weight: 500;
-        margin: 0;
-        color: gray;
-    }
-
-    .socials {
-        width: auto;
-        margin-left: 40px;
-    }
-
-    .socials img {
-        filter: grayscale(100%);
-        opacity: 0.6;
-    }
-
     /*Projects*/
 
     .projects {
@@ -301,4 +108,22 @@ footer {
         color: gray;
         margin-bottom: 120px;
     }
-}   
+
+    .project-box-mobile,
+    .project-box-desktop {
+        display: block;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .project-box-mobile,
+    .project-box-desktop {
+        background-color: #363636;
+        box-shadow: none;
+    }
+
+    .project-links {
+        filter:brightness(0);
+        filter: invert(1);
+    }
+}
