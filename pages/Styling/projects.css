@@ -57,12 +57,12 @@
 
 .project-text {
     margin-bottom: 18px;
-    color: gray; 
+    color: #757575;
 }
 
 .stack-text {
     margin-bottom: 16px;
-    color: gray;
+    color: #757575;
 }
 
 .project-links {
@@ -105,7 +105,7 @@
     .projects-description {
         display: block;
         font-size: 20px;
-        color: gray;
+        color: #a0a0a0;
         margin-bottom: 120px;
     }
 
@@ -118,12 +118,20 @@
 @media (prefers-color-scheme: dark) {
     .project-box-mobile,
     .project-box-desktop {
-        background-color: #363636;
+        background-color: #5c5c5c;
         box-shadow: none;
     }
 
     .project-links {
         filter:brightness(0);
         filter: invert(1);
+    }
+
+    .project-text {
+    color: #d6d6d6; 
+    }
+
+.stack-text {
+    color: #d6d6d6;
     }
 }
