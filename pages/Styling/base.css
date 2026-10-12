@@ -166,7 +166,7 @@ body {
     max-width: 50%;
     aspect-ratio: 1;
     margin: 40px 10px 0 0;
-    padding: 5px;
+    padding: 9px;
     border-radius: 50%;
     background: linear-gradient(
     135deg,
@@ -260,4 +260,21 @@ footer {
 
     /*Introduction*/
 
+    .intro {
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        padding: 120px;
+        padding-top: 250px;
+    }
+
+    .intro-text h1, .intro-text h2, 
+    .intro-text .name, .intro-text p {
+        font-size: 52px;
+        line-height: 1.4;
+    }
+
+    .intro-image {
+        max-width: 25%;
+    }
 }   
